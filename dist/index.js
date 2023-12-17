@@ -349,7 +349,7 @@ function install(executablePath, version, subPackagesArray, linuxLocalArgsArray)
                 // Windows handles permissions automatically
                 command = executablePath;
                 // Install silently
-                installArgs = ['-s'];
+                installArgs = ['-s', '-n'];
                 // Add subpackages to command args (if any)
                 installArgs = installArgs.concat(subPackages.map(subPackage => {
                     // Display driver sub package name is not dependent on version
