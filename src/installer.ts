@@ -45,7 +45,7 @@ export async function install(
       // Windows handles permissions automatically
       command = executablePath
       // Install silently
-      installArgs = ['-s']
+      installArgs = ['-s', '-n']
       // Add subpackages to command args (if any)
       installArgs = installArgs.concat(
         subPackages.map(subPackage => {
